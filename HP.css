@@ -23,17 +23,17 @@ html {
   position: -webkit-sticky;
   position: sticky;
   top: -12vh;
-  height: 12vh;
+  min-height: 10vh;
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 4fr (1fr)[7];
-      grid-template-columns: 2fr 4fr repeat(7, 1fr);
+  -ms-grid-columns: 2fr 4fr (3fr)[2];
+      grid-template-columns: 2fr 4fr repeat(2, 3fr);
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 4;
+  z-index: 2;
 }
 
 #grid-container #mobile-header a {
@@ -56,15 +56,80 @@ html {
   background-color: #F18701;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  padding: 0.5rem 2rem;
-  border-radius: 15%;
+  padding: 0.2rem 0.4rem;
+  border-radius: 18%;
   overflow: hidden;
   text-decoration: none;
+  -webkit-box-shadow: 2px 3px #b96a03;
+          box-shadow: 2px 3px #b96a03;
+  text-shadow: 2px 2px  #b96a03;
+  margin: 3px 0px;
 }
 
 #grid-container #mobile-header #Order-online:hover {
   background-color: #D80032;
   color: black;
+}
+
+#grid-container #mobile-header #mobile-hamburger-menu #mobile-menu-checkbox {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  opacity: 0;
+  z-index: 4;
+}
+
+#grid-container #mobile-header #mobile-hamburger-menu #mobile-menu-checkbox:checked ~ #mobile-header-menu {
+  top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+#grid-container #mobile-header #mobile-hamburger-menu #mobile-hamburger-container {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+  position: relative;
+}
+
+#grid-container #mobile-header #mobile-hamburger-menu #mobile-hamburger-container .mobile-hamburger-line {
+  width: 30px;
+  height: 4px;
+  background-color: #F18701;
+}
+
+#grid-container #mobile-header #mobile-hamburger-menu #mobile-header-menu {
+  position: absolute;
+  width: 100%;
+  background-color: #f39a26;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -40vh;
+  left: 0;
+  opacity: 0;
+  min-height: 40vh;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+#grid-container #mobile-header #mobile-hamburger-menu #mobile-header-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-weight: bold;
+  text-shadow: 2px 2px  #b96a03;
+  cursor: pointer;
 }
 
 #grid-container #zerocontact {
@@ -111,6 +176,9 @@ html {
   border-radius: 15%;
   overflow: hidden;
   text-decoration: none;
+  -webkit-box-shadow: 2px 3px #b96a03;
+          box-shadow: 2px 3px #b96a03;
+  text-shadow: 2px 2px  #b96a03;
 }
 
 #grid-container #scroller-menu #OrderNow:hover {
@@ -123,8 +191,9 @@ html {
   width: 100%;
   height: 400px;
   background-size: cover;
-  color: #cd0000;
+  color: #fff;
   font-family: Helvetica;
+  text-shadow: 2px 2px  #b96a03;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -136,7 +205,8 @@ html {
   width: 100%;
   height: 400px;
   background-size: cover;
-  color: #cd0000;
+  color: #fff;
+  text-shadow: 2px 2px  #b96a03;
   font-family: Helvetica;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -149,8 +219,9 @@ html {
   width: 100%;
   height: 400px;
   background-size: cover;
-  color: #cd0000;
+  color: #fff;
   font-family: Helvetica;
+  text-shadow: 2px 2px  #b96a03;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -170,8 +241,9 @@ html {
   width: 100%;
   height: 400px;
   background-size: cover;
-  color: #cd0000;
+  color: #fff;
   font-family: Helvetica;
+  text-shadow: 2px 2px  #b96a03;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -183,8 +255,9 @@ html {
   width: 100%;
   background-size: cover;
   height: 400px;
-  color: #cd0000;
+  color: #fff;
   font-family: Helvetica;
+  text-shadow: 2px 2px  #b96a03;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -196,8 +269,9 @@ html {
   width: 100%;
   height: 400px;
   background-size: cover;
-  color: #cd0000;
+  color: #fff;
   font-family: Helvetica;
+  text-shadow: 2px 2px  #b96a03;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -209,8 +283,9 @@ html {
   width: 100%;
   height: 400px;
   background-size: cover;
-  color: #cd0000;
+  color: #fff;
   font-family: Helvetica;
+  text-shadow: 2px 2px  #b96a03;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -227,6 +302,7 @@ html {
   text-align: center;
   font-size: 1.4rem;
   font-family: Helvetica;
+  text-shadow: 2px 2px  #b96a03;
   color: #fff;
   background-color: #D80032;
   width: 100%;
