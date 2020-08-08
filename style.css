@@ -1,1 +1,80 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: #F3F9E3;
+}
+
+#grid-container {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+}
+
+#grid-container #header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#grid-container #header #main-nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr 1fr 0.5fr;
+      grid-template-columns: 1fr 4fr 1fr 0.5fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#grid-container #header #main-nav #OkotoksLogo {
+  width: 7rem;
+}
+
+#grid-container #header #main-nav #main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Gotham Pro Black;
+}
+
+#grid-container #header #main-nav #main-navigation li {
+  padding: 0 2;
+}
+
+#grid-container #header #main-nav #main-navigation #OrderNow {
+  font-size: 1.5rem;
+  font-family: Gotham Pro Black;
+  position: relative;
+  left: 16rem;
+  border-style: solid;
+  border: 1rem;
+  border-color: #F18701;
+  color: #fff;
+  background-color: #F18701;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  padding: 2 2;
+  border-radius: 15%;
+}
+
+#grid-container #header #main-nav #main-navigation #OrderNow:hover {
+  background-color: #D80032;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
