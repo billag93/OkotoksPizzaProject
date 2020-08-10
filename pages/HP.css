@@ -5,7 +5,7 @@
 }
 
 html {
-  background-color: #EFD6AD;
+  background-color: #fff;
 }
 
 #grid-container {
@@ -154,7 +154,6 @@ html {
 }
 
 #grid-container #scroller-menu {
-  background-color: #d8b992;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[3];
@@ -188,48 +187,49 @@ html {
 
 #grid-container #scroller-menu #special {
   background-image: url(pizzapictures/specialdeliveryp.jpg);
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  color: #fff;
-  font-family: Helvetica;
-  text-shadow: 2px 2px  #b96a03;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
 }
 
 #grid-container #scroller-menu #combo {
   background-image: url(pizzapictures/combospecialp.jpeg);
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  color: #fff;
-  text-shadow: 2px 2px  #b96a03;
-  font-family: Helvetica;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
 }
 
 #grid-container #scroller-menu #pickup {
   background-image: url(pizzapictures/pickupspecialp.jpg);
+}
+
+#grid-container .menu-option {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   width: 100%;
   height: 400px;
   background-size: cover;
   color: #fff;
+  font-size: 2rem;
   font-family: Helvetica;
   text-shadow: 2px 2px  #b96a03;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   justify-items: center;
+  margin: 3% 0%;
+}
+
+#grid-container .menu-option a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+#grid-container .menu-option a:hover, #grid-container .menu-option a:active {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  font-size: 1.5em;
 }
 
 #grid-container #menuitems {
-  background-color: #d8b992;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[4];
@@ -238,58 +238,18 @@ html {
 
 #grid-container #menuitems #meatza {
   background-image: url(pizzapictures/meatza.jpg);
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  color: #fff;
-  font-family: Helvetica;
-  text-shadow: 2px 2px  #b96a03;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
 }
 
 #grid-container #menuitems #chicken {
   background-image: url(pizzapictures/chicken.jpg);
-  width: 100%;
-  background-size: cover;
-  height: 400px;
-  color: #fff;
-  font-family: Helvetica;
-  text-shadow: 2px 2px  #b96a03;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
 }
 
 #grid-container #menuitems #Veggie {
   background-image: url(pizzapictures/veggie.jpg);
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  color: #fff;
-  font-family: Helvetica;
-  text-shadow: 2px 2px  #b96a03;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
 }
 
 #grid-container #menuitems #Custamize {
   background-image: url(pizzapictures/Custamize.jpg);
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  color: #fff;
-  font-family: Helvetica;
-  text-shadow: 2px 2px  #b96a03;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
 }
 
 #grid-container #completeyourmeal {
@@ -306,5 +266,52 @@ html {
   color: #fff;
   background-color: #D80032;
   width: 100%;
+  margin: 2% 0%;
+}
+
+#grid-container #sides #drinks {
+  background-image: url(pizzapictures/drinks.jpeg);
+}
+
+#grid-container #sides #dips {
+  background-image: url(pizzapictures/dips.jpg);
+}
+
+#grid-container #sides #salads {
+  background-image: url(pizzapictures/salads.jpg);
+}
+
+#grid-container #sides #desserts {
+  background-image: url(pizzapictures/strawberrycheese.jpg);
+}
+
+#grid-container #footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F18701;
+  font-family: Helvetica;
+  font-size: 1rem;
+  text-shadow: 2px 2px  #b96a03;
+  height: 15vh;
+  text-align: center;
+  cursor: pointer;
+}
+
+#grid-container #footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+#grid-container #footer a:hover, #grid-container #footer a:active {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=HP.css.map */

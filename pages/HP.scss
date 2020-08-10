@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 html{
-    background-color: #EFD6AD;
+    background-color: #fff;
 }
 
 #grid-container{
@@ -145,7 +145,6 @@ html{
          background-color:#A51818 ;
      }
      #scroller-menu{
-        background-color: #d8b992;
         display: grid;
         grid-template-rows: repeat(3, 1fr);
         width:100%;
@@ -173,87 +172,62 @@ html{
         }
         #special{
             background-image:url(pizzapictures/specialdeliveryp.jpg);
-            width:100%;
-            height:400px;
-            background-size: cover;
-            color: $fontcolor;
-            font-family: $fontall;
-            text-shadow: 2px 2px  #b96a03;
-            align-items: center;
-            justify-items: center;
+           
         }
         #combo{
             background-image:url(pizzapictures/combospecialp.jpeg);
-            width:100%;
-            height:400px;
-            background-size:cover;
-            color: $fontcolor;
-            text-shadow: 2px 2px  #b96a03;
-            font-family: $fontall;
-            align-items: center;
-            justify-items: center;
+            
         }
         #pickup{
             background-image:url(pizzapictures/pickupspecialp.jpg);
+            
+        }
+     }
+     .menu-option{
+            display:grid;
+            justify-items:center;
+            align-items: center;
+            text-align: center;
             width:100%;
             height: 400px;
             background-size:cover;
             color: $fontcolor;
+            font-size: 2rem;
             font-family: $fontall;
             text-shadow: 2px 2px  #b96a03;
             align-items: center;
             justify-items: center;
-        }
+            margin: 3% 0%;
+            a{
+                text-decoration: none;
+                cursor: pointer;
+                color: #fff;
+            }
+            a:hover,a:active{
+                transition: all 0.8s ease-in-out;
+                font-size: 1.5em;
+            }
      }
 
      #menuitems{
-        background-color: #d8b992;
         display: grid;
         grid-template-rows: repeat(4, 1fr);
+
         
         #meatza{
-            background-image: url(pizzapictures/meatza.jpg);
-            width:100%;
-            height: 400px;
-            background-size:cover;
-            color: $fontcolor;
-            font-family: $fontall;
-            text-shadow: 2px 2px  #b96a03;
-            align-items: center;
-            justify-items: center;
+            background-image: url(pizzapictures/meatza.jpg); 
         }
         #chicken{
             background-image: url(pizzapictures/chicken.jpg);
-            width:100%;
-            background-size:cover;
-            height: 400px;
-            color: $fontcolor;
-            font-family: $fontall;
-            text-shadow: 2px 2px  #b96a03;
-            align-items: center;
-            justify-items: center;
+            
         }
         #Veggie{
             background-image: url(pizzapictures/veggie.jpg);
-            width:100%;
-            height: 400px;
-            background-size:cover;
-            color: $fontcolor;
-            font-family: $fontall;
-            text-shadow: 2px 2px  #b96a03;
-            align-items: center;
-            justify-items: center;
+           
         }
         #Custamize{
             background-image: url(pizzapictures/Custamize.jpg);
-            width:100%;
-            height: 400px;
-            background-size:cover;
-            color: $fontcolor;
-            font-family: $fontall;
-            text-shadow: 2px 2px  #b96a03;
-            align-items: center;
-            justify-items: center;
+           
         
         }
     }
@@ -269,7 +243,52 @@ html{
         color:#fff;
         background-color:#D80032 ;
         width: 100%;
+        margin: 2% 0%;
+    }
+    
+    #sides{
         
-     
+        #drinks{
+            background-image: url(pizzapictures/drinks.jpeg);
+            
+     }
+    #dips{
+        background-image: url(pizzapictures/dips.jpg);
+       
+    
+        }
+        #salads{
+            background-image: url(pizzapictures/salads.jpg);
+           
+        }
+        #desserts{
+            background-image: url(pizzapictures/strawberrycheese.jpg);
+           
+        }
+
+    }  
+
+    #footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        background-color:#F18701;
+        font-family: $fontall;
+        font-size: 1rem;
+        text-shadow: 2px 2px  #b96a03;
+        height: 15vh;
+        text-align: center;
+        cursor: pointer;
+
+        a{
+            text-decoration: none;
+            cursor: pointer;
+            color: #fff;
+        }
+        a:hover,a:active{
+            transition: all 0.8s ease-in-out;
+            font-size: 2rem;
+        }
     }
 }
