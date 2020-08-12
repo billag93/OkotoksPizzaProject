@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="customize.css">
 </head>
 
 <body id="grid-container">
@@ -49,43 +49,43 @@
     <div id="menu-banner">
 
     </div>
-    <div id="meatza-menu">
+    <div id="Customized-menu">
         <div class="menu-container">
 
-            <img src="pizzapictures/Bianca.jpeg" alt="Customized Pizza">
+            <img src="pizzapictures/custompizza.jpg" alt="Customized Pizza">
             <h1>1.Select Crust and Size</h1>
-            <div id="menu-button-price">
-                <h2>Size</h2>
-                <div id="menu-radio">
+            <div id="menu-button-sizeandprice">
+                <div class="menu-grid">
+                    <h2>Size</h2>
                     <div class="radio-grid">
-                        <input type="radio" value="Small (6 slices)" name="pizza-options">
+                        <input type="radio" value="Gluten free 10 inch (6 slices)" name="pizza-options">
                         <p> Gluten free 10" 6 slices </p>
                     </div>
 
                     <div class="radio-grid">
-                        <input type="radio" value="Medium (8 slices)" name="pizza-options">
+                        <input type="radio" value="Gluten free 13 inch (8 slices)" name="pizza-options">
                         <p> Gluten Free 13" (8 slices)</p>
                     </div>
 
                     <div class="radio-grid">
-                        <input type="radio" value="Large (10 slices)" name="pizza-options">
+                        <input type="radio" value="Small (6 slices)" name="pizza-options">
                         <p> Small (6 slices)</p>
                     </div>
 
                     <div class="radio-grid">
-                        <input type="radio" value="X-Large (12 slices)" name="pizza-options">
+                        <input type="radio" value="Medium (8 slices)" name="pizza-options">
                         <p>Medium (8 slices)</p>
                     </div>
                     <div class="radio-grid">
-                        <input type="radio" value="X-Large (12 slices)" name="pizza-options">
+                        <input type="radio" value="Large (10 slices)" name="pizza-options">
                         <p>Large (10 slices)</p>
                     </div>
                     <div class="radio-grid">
-                        <input type="radio" value="X-Large (12 slices)" name="pizza-options">
+                        <input type="radio" value="XLarge (12 slices)" name="pizza-options">
                         <p>XLarge (12 slices)</p>
                     </div>
                     <div class="radio-grid">
-                        <input type="radio" value="X-Large (12 slices)" name="pizza-options">
+                        <input type="radio" value="Party (24 slices)" name="pizza-options">
                         <p>Party (24 slices)</p>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                     <a href="#">$17.99</a>
                 </div>
             </div>
-            <div id="menu-radio-crust">
+            <div  class="menu-grid">
                 <h2>Crust</h2>
                 <div id="menu-radio">
                     <div class="radio-grid">
@@ -112,379 +112,383 @@
                         <p> Gluten Free 13" (8 slices)</p>
                     </div>
                 </div>
-                <div id="menu-radio-cruststyle">
-                    <h2>Crust Style</h2>
-                    <div id="menu-radio">
-                        <div class="radio-grid">
-                            <input type="radio" value="Small (6 slices)" name="pizza-options">
-                            <p> Gluten free 10" 6 slices </p>
-                        </div>
-
-                        <div class="radio-grid">
-                            <input type="radio" value="Medium (8 slices)" name="pizza-options">
-                            <p> Gluten Free 13" (8 slices)</p>
-                        </div>
-                        <div class="radio-grid">
-                            <input type="radio" value="Medium (8 slices)" name="pizza-options">
-                            <p> Gluten Free 13" (8 slices)</p>
-                        </div>
-                        <h3>Deep dish is an additional $1.99</h3>
-                    </div>
-                    <h1>2.Select Sauces and cheese</h1>
-                    <div id="Sauces">
-                        <h2>Sauces</h2>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Pizzaiolo Tomato Sauce</p>
-                        </div>
-                        <div>
-                            <select name="amount" class="amountdropdown">
-                                <option value="normal" class="dropdownoption">
-                                    Normal
-                                </option>
-                                <option value="light" class="dropdownoption">
-                                    light
-                                </option>
-                                <option value="extra" class="dropdownoption">
-                                    extra
-                                </option>
-                                <option value="double" class="dropdownoption">
-                                    double
-                                </option>
-                            </select>
-                        </div>
-                        <div>
-                            <select name="amount" class="amountdropdown">
-                                <option value="whole" class="dropdownoption">
-                                    Whole
-                                </option>
-                                <option value="light" class="dropdownoption">
-                                    Left Side 
-                                </option>
-                                <option value="extra" class="dropdownoption">
-                                    Right
-                                </option>
-                            </select>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>BBQ Sauce (contains gluten)</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Extra Virgin Olive Oil</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Hot Sauce</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Olive Oil & Garlic</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Pesto Sauce (no nuts)</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Satay Sauce (contains gluten)</p>
-                        </div>
-                    </div>
-                    <div id="Cheeses">
-                        <h2>Cheeses</h2>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Mozzarella Cheese</p>
-                        </div>
-                        <div>
-                            <select name="amount" class="amountdropdown">
-                                <option value="normal" class="dropdownoption">
-                                    Normal
-                                </option>
-                                <option value="light" class="dropdownoption">
-                                    light
-                                </option>
-                                <option value="extra" class="dropdownoption">
-                                    extra
-                                </option>
-                                <option value="double" class="dropdownoption">
-                                    double
-                                </option>
-                            </select>
-                        </div>
-                        <div>
-                            <select name="amount" class="amountdropdown">
-                                <option value="whole" class="dropdownoption">
-                                    Whole
-                                </option>
-                                <option value="light" class="dropdownoption">
-                                    Left Side 
-                                </option>
-                                <option value="extra" class="dropdownoption">
-                                    Right
-                                </option>
-                            </select>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Feta Cheese</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Goat Cheese</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Gorgonzola Cheese</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Olive Oil & Garlic</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Parmigiano Cheese</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Ricotta Cheese</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Swiss Cheese (Lactose Free)</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Vegetable Based Cheese</p>
-                        </div>
-                    </div>
-                    <h1>3. Select Toppings</h1>
-                    <div id="Meats">
-                        <h2>Meat</h2>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Anchovies</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Bacon (Real Canadian)</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Chicken Breast (Oven-Roasted)</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Ground Beef</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Ham (contains gluten)</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Pepperoni (Original Dry-Cured)</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Fried Chicken</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Chicken Thighs</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Sausage (Italian)</p>
-                        </div>
-                    </div>
-                    <div id="Vegetables">
-                        <h2>Vegetables</h2>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Artichokes (Marinated)</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Black Olives</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Broccoli</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Cherry Tomatoes</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Green Olives</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Green Peppers</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Hot Banana Peppers</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Jalapeño Peppers</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Kalamata Olives</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Mushrooms (Fresh)</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Pineapple</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Potatoes (Yukon Gold)</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Ground Beef</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Red Onions</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Roasted Red Peppers</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Spinach</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Sun Dried Tomatoes</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Tomatoes (Herbed)</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Zucchini (Marinated)</p>
-                        </div>
-                    </div>
-                    <div id="Herbs">
-                        <h2>Herbs</h2>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Chilli Flakes</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Fresh Garlic</p>
-                        </div>
-                        <h3>free</h3>
-                        <div>
-                            <select name="amount" class="amountdropdown">
-                                <option value="normal" class="dropdownoption">
-                                    Normal
-                                </option>
-                                <option value="light" class="dropdownoption">
-                                    light
-                                </option>
-                                <option value="extra" class="dropdownoption">
-                                    extra
-                                </option>
-                                <option value="double" class="dropdownoption">
-                                    double
-                                </option>
-                            </select>
-                        </div>
-                        <div>
-                            <select name="amount" class="amountdropdown">
-                                <option value="whole" class="dropdownoption">
-                                    Whole
-                                </option>
-                                <option value="light" class="dropdownoption">
-                                    Left Side 
-                                </option>
-                                <option value="extra" class="dropdownoption">
-                                    Right
-                                </option>
-                            </select>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Oregano</p>
-                        </div>
-                        <div class="checkboxes-grid">
-                            <input type="checkbox" class="checkbox"> 
-                            <p>Rosemary</p>
-                        </div>
+            </div>
+            <div  class="menu-grid">
+                <h2>Crust Style</h2>
+                <div id="menu-radio">
+                    <div class="radio-grid">
+                        <input type="radio" value="Small (6 slices)" name="pizza-options">
+                        <p> Gluten free 10" 6 slices </p>
                     </div>
 
-                <div id="order-summary">
-                        <div id="total" >
-                            <p>Order Summary</p>
-                            <p>$26.99</p>
-                        </div>
-                        <p>
-                            <h3>Create Your Own Pizza</h3>
-                            Size: XLarge (12 slices)
-                            -Supreme Maranara Sauce
-                            -Onions 
-                            -Green Peppers 
-                            -Crispy Fried Chicken
-                            -Mozzarella Cheese
-                        </p>
-                        <div id="plusminus">
-                            <a href="#">
-                                <i class="fas fa-plus-square"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fas fa-minus-square"></i>
-                            </a>
-                        </div>
-                    <div id="customize-addtoorder">
-                        <a href="#">Cancel</a>
-                        <a href="#">Add To Order</a>
+                    <div class="radio-grid">
+                        <input type="radio" value="Medium (8 slices)" name="pizza-options">
+                        <p> Gluten Free 13" (8 slices)</p>
                     </div>
+                    <div class="radio-grid">
+                        <input type="radio" value="Medium (8 slices)" name="pizza-options">
+                        <p> Gluten Free 13" (8 slices)</p>
+                    </div>
+                    <h3>Deep dish is an additional $1.99</h3>
                 </div>
-
-
+            </div>
+            <h1>2.Select Sauces and cheese</h1>
+            <div  class="menu-grid">
+                <h2>Sauces</h2>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Pizzaiolo Tomato Sauce</p>
                 </div>
-
-
-                <div id="footer">
-                    <div id="links">
-                        <a href="#">Menu</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Specials</a>
-                        <a href="#">Location</a>
-                    </div>
-                    <div id="copyright">
-                        <a href="#">copyright</a>
-                    </div>
-                    <div id="social-media">
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-twitter-square"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-envelope-square"></i>
-                        </a>
-                    </div>
+                <div>
+                    <select name="amount" class="amountdropdown">
+                        <option value="normal" class="dropdownoption">
+                            Normal
+                        </option>
+                        <option value="light" class="dropdownoption">
+                            light
+                        </option>
+                        <option value="extra" class="dropdownoption">
+                            extra
+                        </option>
+                        <option value="double" class="dropdownoption">
+                            double
+                        </option>
+                    </select>
                 </div>
+                <div>
+                    <select name="amount" class="amountdropdown">
+                        <option value="whole" class="dropdownoption">
+                            Whole
+                        </option>
+                        <option value="light" class="dropdownoption">
+                            Left Side
+                        </option>
+                        <option value="extra" class="dropdownoption">
+                            Right
+                        </option>
+                    </select>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>BBQ Sauce (contains gluten)</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Extra Virgin Olive Oil</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Hot Sauce</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Olive Oil & Garlic</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Pesto Sauce (no nuts)</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Satay Sauce (contains gluten)</p>
+                </div>
+            </div>
+            <div class="menu-grid">
+                <h2>Cheeses</h2>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Mozzarella Cheese</p>
+                </div>
+                <div>
+                    <select name="amount" class="amountdropdown">
+                        <option value="normal" class="dropdownoption">
+                            Normal
+                        </option>
+                        <option value="light" class="dropdownoption">
+                            light
+                        </option>
+                        <option value="extra" class="dropdownoption">
+                            extra
+                        </option>
+                        <option value="double" class="dropdownoption">
+                            double
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <select name="amount" class="amountdropdown">
+                        <option value="whole" class="dropdownoption">
+                            Whole
+                        </option>
+                        <option value="light" class="dropdownoption">
+                            Left Side
+                        </option>
+                        <option value="extra" class="dropdownoption">
+                            Right
+                        </option>
+                    </select>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Feta Cheese</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Goat Cheese</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Gorgonzola Cheese</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Olive Oil & Garlic</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Parmigiano Cheese</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Ricotta Cheese</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Swiss Cheese (Lactose Free)</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Vegetable Based Cheese</p>
+                </div>
+            </div>
+            <h1>3. Select Toppings</h1>
+            <div  class="menu-grid">
+                <h2>Meat</h2>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Anchovies</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Bacon (Real Canadian)</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Chicken Breast (Oven-Roasted)</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Ground Beef</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Ham (contains gluten)</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Pepperoni (Original Dry-Cured)</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Fried Chicken</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Chicken Thighs</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Sausage (Italian)</p>
+                </div>
+            </div>
+            <div  class="menu-grid">
+                <h2>Vegetables</h2>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Artichokes (Marinated)</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Black Olives</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Broccoli</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Cherry Tomatoes</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Green Olives</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Green Peppers</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Hot Banana Peppers</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Jalapeño Peppers</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Kalamata Olives</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Mushrooms (Fresh)</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Pineapple</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Potatoes (Yukon Gold)</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Ground Beef</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Red Onions</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Roasted Red Peppers</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Spinach</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Sun Dried Tomatoes</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Tomatoes (Herbed)</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Zucchini (Marinated)</p>
+                </div>
+            </div>
+            <div  class="menu-grid">
+                <h2>Herbs</h2>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Chilli Flakes</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Fresh Garlic</p>
+                </div>
+                <h3>free</h3>
+                <div>
+                    <select name="amount" class="amountdropdown">
+                        <option value="normal" class="dropdownoption">
+                            Normal
+                        </option>
+                        <option value="light" class="dropdownoption">
+                            light
+                        </option>
+                        <option value="extra" class="dropdownoption">
+                            extra
+                        </option>
+                        <option value="double" class="dropdownoption">
+                            double
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <select name="amount" class="amountdropdown">
+                        <option value="whole" class="dropdownoption">
+                            Whole
+                        </option>
+                        <option value="light" class="dropdownoption">
+                            Left Side
+                        </option>
+                        <option value="extra" class="dropdownoption">
+                            Right
+                        </option>
+                    </select>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Oregano</p>
+                </div>
+                <div class="checkboxes-grid">
+                    <input type="checkbox" class="checkbox">
+                    <p>Rosemary</p>
+                </div>
+            </div>
+
+            <div id="order-summary">
+                <div id="total">
+                    <p>Order Summary</p>
+                    <p>$26.99</p>
+                </div>
+                <p>
+                <h3>Create Your Own Pizza</h3>
+                Size: XLarge (12 slices)
+                -Supreme Maranara Sauce
+                -Onions
+                -Green Peppers
+                -Crispy Fried Chicken
+                -Mozzarella Cheese
+                </p>
+                <div id="plusminus">
+                    <a href="#">
+                        <i class="fas fa-plus-square"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-minus-square"></i>
+                    </a>
+                </div>
+                <div id="customize-addtoorder">
+                    <a href="#">Cancel</a>
+                    <a href="#">Add To Order</a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div id="footer">
+            <div id="links">
+                <a href="#">Menu</a>
+                <a href="#">About Us</a>
+                <a href="#">Specials</a>
+                <a href="#">Location</a>
+            </div>
+            <div id="copyright">
+                <a href="#">copyright</a>
+            </div>
+            <div id="social-media">
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-envelope-square"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
 
 
 
