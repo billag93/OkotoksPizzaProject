@@ -132,6 +132,28 @@ html {
   cursor: pointer;
 }
 
+#grid-container .about-us {
+  display: -ms-grid;
+  display: grid;
+  width: 90%;
+  margin: 3% 5%;
+  font-family: Helvetica;
+  -webkit-box-shadow: 2px 3px 5px #b96a03;
+          box-shadow: 2px 3px 5px #b96a03;
+}
+
+#grid-container .about-us img {
+  width: 100%;
+  margin: 4% 0%;
+}
+
+#grid-container .about-us p {
+  margin: 10% 0%;
+  font-family: Helvetica;
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
 #grid-container #footer {
   display: -ms-grid;
   display: grid;

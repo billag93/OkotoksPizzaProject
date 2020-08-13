@@ -121,7 +121,23 @@ html{
                 }    
 
             }
-
+            .about-us{
+                display: grid;
+                width: 90%;
+                margin: 3% 5%;
+                font-family: $fontall;
+                box-shadow: 2px 3px 5px #b96a03;
+                img{
+                    width: 100%;
+                    margin: 4% 0%;
+                }
+                p{
+                    margin: 10% 0%;
+                    font-family: $fontall;
+                    font-size: 1.2em;
+                    line-height: 1.8em;
+                }
+            }
 
             #footer{
                 display: grid;
