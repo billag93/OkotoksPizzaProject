@@ -118,109 +118,382 @@ html{
                             cursor: pointer;
                         }
                     }
-                }    
+                }
+
+                
 
             }
-
-                #meatza-menu{
-                    display: grid;
-                    width: 100%;
-                    
-                    .menu-container{
-                        display: grid;
-                        width: 90%;
-                        grid-template-rows: 3fr 1fr 1fr 2fr 1fr;
-                        justify-items: center;
-                        align-items: center;
-                        margin: 3% 5%;
-                        img{
-                            width: 100%;
-                        }
-                        font-family: $fontall;
-                        box-shadow: 2px 3px 5px #b96a03;
-                        p{
-                            text-align: left;
-                            padding: 0% 4.2%;
-                        }
-                        #customize-addtoorder{
-                            a{
-                                font-size: 1.5rem;
-                                border-radius: 5%;
-                                font-family: $fontall;
-                                color: white;
-                                background-color: #F18701 ;
-                                border-color: #b96a03;
-                                box-shadow: 2px 3px 5px #b96a03;
-                                transition: 0.8s;
-                              
-                            }
-                            a:hover{
-                                background-color:green;
-                                color: black;
-                            }
-                        }
-                        a{
-                            text-decoration: none;
-                            color:#F18701;
-                        }
-                        #card-data{
-                            display: grid;
-                            grid-template-columns: repeat(2, 1fr);
-
-                            #plusminus{
-                                font-size: 1.9rem;
-                                justify-items: center;
-                                align-items: center;
-                            }
-
-                        }
-                        #menu-button-price{
-                            display: grid;
-                            grid-template-columns: 2fr 1fr;
-                            align-items: center;
-                            justify-items: center;
-
-                            #menu-radio{
-                                display: grid;
-
-                                .radio-grid{
-                                    display: grid;
-                                    grid-template-columns: 1fr 3fr;
-                                    justify-items: center;
-                                    align-items:center;
-                                    text-align: left;
-                                }
-                                    
-                            }
-                            .pizza-prices{
-                                display: grid;
-                                text-align: right;
-                               
-                            }
-                        }
-                    }   
-                }
-
-            
-
-            #footer{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                justify-items: center;
-                align-items: center;
-                background-color:#F18701;
-                font-family: $fontall;
-                font-size: 1rem;
-                text-shadow: 2px 2px  #b96a03;
-                height: 15vh;
-                cursor: pointer;
-
-                #links{
-                    display: grid;
-                    grid-template-rows: repeat(4, 1fr);
-                    text-align: left;
-                }
         
+
+
+    #zerocontact{
+        display: block;
+        position: relative;
+       align-items: center;
+        justify-items: center;
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: $fontall;
+        color:#fff;
+        background-color:#D80032 ;
+        width: 100%;
+     }
+
+     #banner{
+         width: 100%;
+         height:2vh;
+         background-color:#A51818 ;
+     }
+     #scroller-menu{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        width:100%;
+        #OrderNow{
+            font-size: 1.2rem;
+            font-family: $fontall;
+            border-style: solid;
+            border: 1rem;
+            border-color: #502f04;
+            color: #fff;
+            background-color:#F18701 ;
+            transition: 0.8s;
+            padding:0.5rem 1rem;
+            border-radius: 15%;
+            overflow: hidden;
+            text-decoration: none;
+            box-shadow: 2px 3px #b96a03;
+            text-shadow: 2px 2px  #b96a03;
+            
+            
+        }   
+        #OrderNow:hover{
+            background-color: #D80032;
+            color: black;
+        }
+        #special{
+            background-image:url(pizzapictures/specialdeliveryp.jpg);
+           
+        }
+        #combo{
+            background-image:url(pizzapictures/combospecialp.jpeg);
+            
+        }
+        #pickup{
+            background-image:url(pizzapictures/pickupspecialp.jpg);
+            
+        }
+     }
+     .menu-option{
+            display:grid;
+            justify-items:center;
+            align-items: center;
+            text-align: center;
+            width:100%;
+            height: 400px;
+            background-size:cover;
+            color: $fontcolor;
+            font-size: 2rem;
+            font-family: $fontall;
+            text-shadow: 2px 2px  #b96a03;
+            align-items: center;
+            justify-items: center;
+            margin: 3% 0%;
+            a{
+                text-decoration: none;
+                cursor: pointer;
+                color: #fff;
+            }
+            a:hover,a:active{
+                transition: all 0.8s ease-in-out;
+                font-size: 1.5em;
+            }
+     }
+
+     #menuitems{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+
+        
+        #meatza{
+            background-image: url(pizzapictures/meatza.jpg); 
+        }
+        #chicken{
+            background-image: url(pizzapictures/chicken.jpg);
+            
+        }
+        #Veggie{
+            background-image: url(pizzapictures/veggie.jpg);
+           
+        }
+        #Custamize{
+            background-image: url(pizzapictures/Custamize.jpg);
+           
+        
+        }
+    }
+    #completeyourmeal{
+        display: block;
+        position: relative;
+       align-items: center;
+        justify-items: center;
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: $fontall;
+        text-shadow: 2px 2px  #b96a03;
+        color:#fff;
+        background-color:#D80032 ;
+        width: 100%;
+        margin: 2% 0%;
+    }
+    
+    #sides{
+        
+        #drinks{
+            background-image: url(pizzapictures/drinks.jpeg);
+            
+     }
+    #dips{
+        background-image: url(pizzapictures/dips.jpg);
+       
+    
+        }
+        #salads{
+            background-image: url(pizzapictures/salads.jpg);
+           
+        }
+        #desserts{
+            background-image: url(pizzapictures/strawberrycheese.jpg);
+           
+        }
+
+    }  
+
+    #footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        background-color:#F18701;
+        font-family: $fontall;
+        font-size: 1rem;
+        text-shadow: 2px 2px  #b96a03;
+        height: 15vh;
+        cursor: pointer;
+
+        #links{
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            text-align: left;
+        }
+
+        a{
+            text-decoration: none;
+            cursor: pointer;
+            color: #fff;
+        }
+        a:hover,a:active{
+            transition: all 0.8s ease-in-out;
+            font-size: 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px){
+    @import'_variables.scss';
+    @import'_animations.scss';
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    
+    html{
+        background-color: #fff;
+    }
+    
+    #grid-container{
+        display: grid;
+        width: 100%;
+    
+        #desktop-header{
+            display: none;
+        }
+        
+        #mobile-header{
+            background-color: #fff;
+            position: sticky;
+            top:-12vh;
+            min-height: 10vh;
+            width: 100%;
+            display:grid;
+            grid-template-columns: 2fr 4fr repeat(2, 3fr);
+            justify-items: center;
+            align-items: center;
+            z-index: 2;
+            
+            a{
+                text-decoration: none;
+                font-size: 1.2rem;
+                font-family: $fontall;
+            }
+    
+                #OkotoksLogo{
+                   height:10vh;
+                }
+                    #Order-online{
+                        font-size: 1.5rem;
+                        font-family: $fontall;
+                        border-style: solid;
+                        border: 1rem;
+                        border-color: #b96a03;
+                        color: #fff;
+                        background-color:#F18701 ;
+                        transition: 0.8s;
+                        padding:0.2rem 0.4rem;
+                        border-radius: 18%;
+                        overflow: hidden;
+                        text-decoration: none;
+                        box-shadow: 2px 3px #b96a03;
+                        text-shadow: 2px 2px  #b96a03;
+                        margin: 3px 0px;
+                        
+                    }   
+                    #Order-online:hover{
+                        background-color: #D80032;
+                        color: black;
+                    }
+    
+                    #mobile-hamburger-menu{
+    
+                        #mobile-menu-checkbox{
+                            width: 50px;
+                            height:50px;
+                            position: absolute;
+                            opacity: 0;
+                            z-index: 4;
+                        }
+    
+                        #mobile-menu-checkbox:checked ~ #mobile-header-menu{
+                            top:0;
+                            opacity: 1;
+                            transition: all 0.8s ease-in-out;
+                        }
+    
+                        #mobile-hamburger-container{
+                            display: grid;
+                            justify-items: center;
+                            align-items: center;
+                            width: 50px;
+                            height: 50px;
+                            z-index: 3;
+                            position: relative;
+                            
+        
+                            .mobile-hamburger-line{
+                                width: 30px;
+                                height:4px;
+                                background-color:#F18701 ;
+                            }
+                        }
+    
+                        #mobile-header-menu{
+                            position: absolute;
+                            width: 100%;
+                            background-color:#f39a26 ;
+                            display: grid;
+                            justify-items: center;
+                            align-items: center;
+                            top: -40vh;
+                            left: 0;
+                            opacity: 0;
+                            min-height: 40vh;
+                            transition: all 0.8s ease-in-out;
+    
+                            a{
+                                color: $fontcolor;
+                                text-decoration:none;
+                                font-family: $fontall;
+                                font-weight: bold;
+                                text-shadow: 2px 2px  #b96a03;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+    
+                    
+    
+                }
+            
+    
+    
+        #zerocontact{
+            display: block;
+            position: relative;
+           align-items: center;
+            justify-items: center;
+            text-align: center;
+            font-size: 1.4rem;
+            font-family: $fontall;
+            color:#fff;
+            background-color:#D80032 ;
+            width: 100%;
+         }
+    
+         #banner{
+             width: 100%;
+             height:2vh;
+             background-color:#A51818 ;
+         }
+         #scroller-menu{
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            width:100%;
+            #OrderNow{
+                font-size: 1.2rem;
+                font-family: $fontall;
+                border-style: solid;
+                border: 1rem;
+                border-color: #502f04;
+                color: #fff;
+                background-color:#F18701 ;
+                transition: 0.8s;
+                padding:0.5rem 1rem;
+                border-radius: 15%;
+                overflow: hidden;
+                text-decoration: none;
+                box-shadow: 2px 3px #b96a03;
+                text-shadow: 2px 2px  #b96a03;
+                
+                
+            }   
+            #OrderNow:hover{
+                background-color: #D80032;
+                color: black;
+            }
+            #special{
+                background-image:url(pizzapictures/specialdeliveryp.jpg);
+               
+            }
+            #combo{
+                background-image:url(pizzapictures/combospecialp.jpeg);
+                
+            }
+            #pickup{
+                background-image:url(pizzapictures/pickupspecialp.jpg);
+                
+            }
+         }
+         .menu-option{
+                display:grid;
+                justify-items:center;
+                align-items: center;
+                text-align: center;
+                width:100%;
+                height: 400px;
+                background-size:cover;
+                color: $fontcolor;
+                font-size: 2rem;
+                font-family: $fontall;
+                text-shadow: 2px 2px  #b96a03;
+                align-items: center;
+                justify-items: center;
+                margin: 3% 0%;
                 a{
                     text-decoration: none;
                     cursor: pointer;
@@ -228,9 +501,100 @@ html{
                 }
                 a:hover,a:active{
                     transition: all 0.8s ease-in-out;
-                    font-size: 2rem;
+                    font-size: 1.5em;
                 }
+         }
+    
+         #menuitems{
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+    
+            
+            #meatza{
+                background-image: url(pizzapictures/meatza.jpg); 
             }
-      }  
-       
+            #chicken{
+                background-image: url(pizzapictures/chicken.jpg);
+                
+            }
+            #Veggie{
+                background-image: url(pizzapictures/veggie.jpg);
+               
+            }
+            #Custamize{
+                background-image: url(pizzapictures/Custamize.jpg);
+               
+            
+            }
+        }
+        #completeyourmeal{
+            display: block;
+            position: relative;
+           align-items: center;
+            justify-items: center;
+            text-align: center;
+            font-size: 1.4rem;
+            font-family: $fontall;
+            text-shadow: 2px 2px  #b96a03;
+            color:#fff;
+            background-color:#D80032 ;
+            width: 100%;
+            margin: 2% 0%;
+        }
         
+        #sides{
+            
+            #drinks{
+                background-image: url(pizzapictures/drinks.jpeg);
+                
+         }
+        #dips{
+            background-image: url(pizzapictures/dips.jpg);
+           
+        
+            }
+            #salads{
+                background-image: url(pizzapictures/salads.jpg);
+               
+            }
+            #desserts{
+                background-image: url(pizzapictures/strawberrycheese.jpg);
+               
+            }
+    
+        }  
+    
+        #footer{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            align-items: center;
+            background-color:#F18701;
+            font-family: $fontall;
+            font-size: 1rem;
+            text-shadow: 2px 2px  #b96a03;
+            height: 15vh;
+            cursor: pointer;
+    
+            #links{
+                display: grid;
+                grid-template-rows: repeat(4, 1fr);
+                text-align: left;
+            }
+    
+            a{
+                text-decoration: none;
+                cursor: pointer;
+                color: #fff;
+            }
+            a:hover,a:active{
+                transition: all 0.8s ease-in-out;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1020px){
+    
+}
