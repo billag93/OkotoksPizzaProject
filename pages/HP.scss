@@ -139,6 +139,18 @@ html{
         background-color:#D80032 ;
         width: 100%;
      }
+     #headline{
+        font-family: $fontall;
+        font-weight: bold;
+        color: #F18701;
+        text-align: center;
+        border-style: solid;
+        border-color: #F18701;
+        border-radius: 20%;
+        justify-items: center;
+        align-items: center;
+
+     }
 
      #banner{
          width: 100%;
@@ -386,8 +398,11 @@ html{
              width: 100%;
              justify-items: center;
              align-items: center;
-             object-fit: cover;
-             margin: 5% 0%;
+             
+                iframe{
+                    width:100%;
+                    max-width:560px;
+                }
          }
     
          #banner{
