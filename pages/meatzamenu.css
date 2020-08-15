@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
 html {
-  background-color: #fff;
+  background-image: url(pizzapictures/cleantextured.png);
 }
 
 #grid-container {
   display: -ms-grid;
   display: grid;
   width: 100%;
+  background-color: #fff;
 }
 
 #grid-container #desktop-header {
@@ -22,7 +25,7 @@ html {
   background-color: #fff;
   position: -webkit-sticky;
   position: sticky;
-  top: -12vh;
+  top: 0;
   min-height: 10vh;
   width: 100%;
   display: -ms-grid;
@@ -155,7 +158,10 @@ html {
 }
 
 #grid-container #meatza-menu .menu-container img {
+  height: 200px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #grid-container #meatza-menu .menu-container p {
@@ -270,5 +276,255 @@ html {
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
   font-size: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    background-color: #fff;
+  }
+  #grid-container {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+  }
+  #grid-container #desktop-header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
+        grid-template-columns: 2fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
+    background-color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    min-height: 10vh;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 2;
+    margin: 2% 0%;
+  }
+  #grid-container #desktop-header a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: Helvetica;
+    color: #F18701;
+  }
+  #grid-container #desktop-header #OkotoksLogo {
+    height: 10vh;
+  }
+  #grid-container #desktop-header #Order-online {
+    font-size: 1.5rem;
+    font-family: Helvetica;
+    border-style: solid;
+    border: 1rem;
+    border-color: #b96a03;
+    color: #fff;
+    background-color: #F18701;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    padding: 0.2rem 0.4rem;
+    border-radius: 18%;
+    overflow: hidden;
+    text-decoration: none;
+    -webkit-box-shadow: 2px 3px #b96a03;
+            box-shadow: 2px 3px #b96a03;
+    text-shadow: 2px 2px  #b96a03;
+    margin: 3px 0px;
+  }
+  #grid-container #desktop-header #Order-online:hover {
+    background-color: #D80032;
+    color: black;
+  }
+  #grid-container #mobile-header {
+    display: none;
+  }
+  #grid-container #zerocontact {
+    display: block;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: Helvetica;
+    color: #fff;
+    background-color: #D80032;
+    width: 100%;
+  }
+  #grid-container #banner {
+    width: 100%;
+    height: 2vh;
+    background-color: #A51818;
+  }
+  #grid-container #meatza-menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  #grid-container #footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #F18701;
+    font-family: Helvetica;
+    font-size: 1rem;
+    text-shadow: 2px 2px  #b96a03;
+    height: 15vh;
+    cursor: pointer;
+  }
+  #grid-container #footer #links {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    text-align: left;
+  }
+  #grid-container #footer a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+  }
+  #grid-container #footer a:hover, #grid-container #footer a:active {
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  html {
+    background-color: #fff;
+  }
+  #grid-container {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+  }
+  #grid-container #desktop-header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
+        grid-template-columns: 2fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
+    background-color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    min-height: 10vh;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 2;
+    margin: 2% 0%;
+  }
+  #grid-container #desktop-header a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: Helvetica;
+    color: #F18701;
+  }
+  #grid-container #desktop-header #OkotoksLogo {
+    height: 10vh;
+  }
+  #grid-container #desktop-header #Order-online {
+    font-size: 1.5rem;
+    font-family: Helvetica;
+    border-style: solid;
+    border: 1rem;
+    border-color: #b96a03;
+    color: #fff;
+    background-color: #F18701;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    padding: 0.2rem 0.4rem;
+    border-radius: 18%;
+    overflow: hidden;
+    text-decoration: none;
+    -webkit-box-shadow: 2px 3px #b96a03;
+            box-shadow: 2px 3px #b96a03;
+    text-shadow: 2px 2px  #b96a03;
+    margin: 3px 0px;
+  }
+  #grid-container #desktop-header #Order-online:hover {
+    background-color: #D80032;
+    color: black;
+  }
+  #grid-container #mobile-header {
+    display: none;
+  }
+  #grid-container #zerocontact {
+    display: block;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: Helvetica;
+    color: #fff;
+    background-color: #D80032;
+    width: 100%;
+  }
+  #grid-container #banner {
+    width: 100%;
+    height: 2vh;
+    background-color: #A51818;
+  }
+  #grid-container #meatza-menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  #grid-container #footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #F18701;
+    font-family: Helvetica;
+    font-size: 1rem;
+    text-shadow: 2px 2px  #b96a03;
+    height: 15vh;
+    cursor: pointer;
+  }
+  #grid-container #footer #links {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    text-align: left;
+  }
+  #grid-container #footer a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+  }
+  #grid-container #footer a:hover, #grid-container #footer a:active {
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=meatzamenu.css.map */

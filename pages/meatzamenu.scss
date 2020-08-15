@@ -8,12 +8,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 html{
-    background-color: #fff;
+    background-image: url(pizzapictures/cleantextured.png);
 }
 
 #grid-container{
     display: grid;
     width: 100%;
+    background-color: #fff;
 
     #desktop-header{
         display: none;
@@ -22,7 +23,7 @@ html{
     #mobile-header{
         background-color: #fff;
         position: sticky;
-        top:-12vh;
+        top:0;
         min-height: 10vh;
         width: 100%;
         display:grid;
@@ -134,7 +135,9 @@ html{
                         align-items: center;
                         margin: 3% 5%;
                         img{
+                            height:200px;
                             width: 100%;
+                            object-fit: cover;
                         }
                         font-family: $fontall;
                         box-shadow: 2px 3px 5px #b96a03;
@@ -232,5 +235,251 @@ html{
                 }
             }
       }  
+
+      @media only screen and (min-width: 768px){
+        @import'_variables.scss';
+        @import'_animations.scss';
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+        
+        html{
+            background-color: #fff;
+        }
+        
+        #grid-container{
+            display: grid;
+            width: 100%;
+        
+            #desktop-header{
+                display: grid;
+                grid-template-columns: 2fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
+                background-color: #fff;
+                position: sticky;
+                top:0;
+                min-height: 10vh;
+                width: 100%;
+                display:grid;
+                justify-items: center;
+                align-items: center;
+                z-index: 2;
+                margin: 2% 0%;
+                
+                a{
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    font-family: $fontall;
+                    color: #F18701;
+                }
+        
+                    #OkotoksLogo{
+                       height:10vh;
+                    }
+                        #Order-online{
+                            font-size: 1.5rem;
+                            font-family: $fontall;
+                            border-style: solid;
+                            border: 1rem;
+                            border-color: #b96a03;
+                            color: #fff;
+                            background-color:#F18701 ;
+                            transition: 0.8s;
+                            padding:0.2rem 0.4rem;
+                            border-radius: 18%;
+                            overflow: hidden;
+                            text-decoration: none;
+                            box-shadow: 2px 3px #b96a03;
+                            text-shadow: 2px 2px  #b96a03;
+                            margin: 3px 0px;
+                            
+                        }   
+                        #Order-online:hover{
+                            background-color: #D80032;
+                            color: black;
+                        }
+            }
+            
+            #mobile-header{
+                display: none;
+                    }
+                
+        
+        
+            #zerocontact{
+                display: block;
+                position: relative;
+               align-items: center;
+                justify-items: center;
+                text-align: center;
+                font-size: 1.4rem;
+                font-family: $fontall;
+                color:#fff;
+                background-color:#D80032 ;
+                width: 100%;
+             }
+        
+             #banner{
+                 width: 100%;
+                 height:2vh;
+                 background-color:#A51818 ;
+             }
+          #meatza-menu{
+              display:grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-template-rows: repeat(2, 1fr);
+          }
+            
+        
+            #footer{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                justify-items: center;
+                align-items: center;
+                background-color:#F18701;
+                font-family: $fontall;
+                font-size: 1rem;
+                text-shadow: 2px 2px  #b96a03;
+                height: 15vh;
+                cursor: pointer;
+        
+                #links{
+                    display: grid;
+                    grid-template-rows: repeat(4, 1fr);
+                    text-align: left;
+                }
+        
+                a{
+                    text-decoration: none;
+                    cursor: pointer;
+                    color: #fff;
+                }
+                a:hover,a:active{
+                    transition: all 0.8s ease-in-out;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 1020px){
+        @import'_variables.scss';
+        @import'_animations.scss';
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+        
+        html{
+            background-color: #fff;
+        }
+        
+        #grid-container{
+            display: grid;
+            width: 100%;
+        
+            #desktop-header{
+                display: grid;
+                grid-template-columns: 2fr 0.5fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
+                background-color: #fff;
+                position: sticky;
+                top:0;
+                min-height: 10vh;
+                width: 100%;
+                display:grid;
+                justify-items: center;
+                align-items: center;
+                z-index: 2;
+                margin: 2% 0%;
+                
+                a{
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    font-family: $fontall;
+                    color: #F18701;
+                }
+        
+                    #OkotoksLogo{
+                       height:10vh;
+                    }
+                        #Order-online{
+                            font-size: 1.5rem;
+                            font-family: $fontall;
+                            border-style: solid;
+                            border: 1rem;
+                            border-color: #b96a03;
+                            color: #fff;
+                            background-color:#F18701 ;
+                            transition: 0.8s;
+                            padding:0.2rem 0.4rem;
+                            border-radius: 18%;
+                            overflow: hidden;
+                            text-decoration: none;
+                            box-shadow: 2px 3px #b96a03;
+                            text-shadow: 2px 2px  #b96a03;
+                            margin: 3px 0px;
+                            
+                        }   
+                        #Order-online:hover{
+                            background-color: #D80032;
+                            color: black;
+                        }
+            }
+            
+            #mobile-header{
+                display: none;
+                    }
+                
+        
+        
+            #zerocontact{
+                display: block;
+                position: relative;
+               align-items: center;
+                justify-items: center;
+                text-align: center;
+                font-size: 1.4rem;
+                font-family: $fontall;
+                color:#fff;
+                background-color:#D80032 ;
+                width: 100%;
+             }
+        
+             #banner{
+                 width: 100%;
+                 height:2vh;
+                 background-color:#A51818 ;
+             }
+          #meatza-menu{
+              display:grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-template-rows: repeat(2, 1fr);
+          }
+            
+        
+            #footer{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                justify-items: center;
+                align-items: center;
+                background-color:#F18701;
+                font-family: $fontall;
+                font-size: 1rem;
+                text-shadow: 2px 2px  #b96a03;
+                height: 15vh;
+                cursor: pointer;
+        
+                #links{
+                    display: grid;
+                    grid-template-rows: repeat(4, 1fr);
+                    text-align: left;
+                }
+        
+                a{
+                    text-decoration: none;
+                    cursor: pointer;
+                    color: #fff;
+                }
+                a:hover,a:active{
+                    transition: all 0.8s ease-in-out;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
        
         
