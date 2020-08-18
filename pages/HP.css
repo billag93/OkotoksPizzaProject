@@ -328,6 +328,11 @@ html {
   text-align: left;
 }
 
+#grid-container #footer #copyright {
+  display: -ms-grid;
+  display: grid;
+}
+
 #grid-container #footer a {
   text-decoration: none;
   cursor: pointer;
@@ -549,6 +554,7 @@ html {
     -webkit-column-gap: 8px;
             column-gap: 8px;
     margin: 2% 2%;
+    color: #b96a03;
   }
   #grid-container #sides #drinks {
     background-image: url(pizzapictures/drinks.jpeg);

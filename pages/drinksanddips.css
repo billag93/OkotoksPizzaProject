@@ -268,7 +268,7 @@ html img {
 
 @media only screen and (min-width: 768px) {
   html {
-    background-color: #fff;
+    background-image: url(pizzapictures/cleantextured.png);
   }
   #grid-container {
     display: -ms-grid;
@@ -456,7 +456,7 @@ html img {
 
 @media only screen and (min-width: 1020px) {
   html {
-    background-color: #fff;
+    background-image: url(pizzapictures/cleantextured.png);
   }
   #grid-container {
     display: -ms-grid;

@@ -182,6 +182,11 @@ html {
   text-align: left;
 }
 
+#grid-container #footer #copyright {
+  display: -ms-grid;
+  display: grid;
+}
+
 #grid-container #footer a {
   text-decoration: none;
   cursor: pointer;
@@ -278,6 +283,9 @@ html {
     font-size: 1.2em;
     line-height: 1.8em;
     padding: 0% 8%;
+    border: solid 2px #F18701;
+    -webkit-box-shadow: 2px 3px 6px #b96a03;
+            box-shadow: 2px 3px 6px #b96a03;
   }
   #grid-container #footer {
     display: -ms-grid;

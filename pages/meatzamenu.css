@@ -266,6 +266,11 @@ html {
   text-align: left;
 }
 
+#grid-container #footer #copyright {
+  display: -ms-grid;
+  display: grid;
+}
+
 #grid-container #footer a {
   text-decoration: none;
   cursor: pointer;
