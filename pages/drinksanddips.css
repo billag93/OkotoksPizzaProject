@@ -517,34 +517,6 @@ html img {
   #grid-container #desktop-header #mobile-header {
     display: none;
   }
-  #grid-container #desktop-header .Location {
-    display: -ms-grid;
-    display: grid;
-    width: 90%;
-    margin: 3% 5%;
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-family: Helvetica;
-    -webkit-box-shadow: 2px 3px 5px #b96a03;
-            box-shadow: 2px 3px 5px #b96a03;
-  }
-  #grid-container #desktop-header .Location h2 {
-    color: #F18701;
-    margin: 10% 0%;
-    font-size: 3.5em;
-    border-style: solid;
-    border-color: #b96a03;
-    border-radius: 10%;
-    padding: 3%;
-    -webkit-box-shadow: 2px 3px 5px #b96a03;
-            box-shadow: 2px 3px 5px #b96a03;
-  }
-  #grid-container #desktop-header .Location iframe {
-    margin: 5% 3%;
-    width: 90%;
-  }
   #grid-container #desktop-header #footer {
     display: -ms-grid;
     display: grid;

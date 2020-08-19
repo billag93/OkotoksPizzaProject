@@ -6,7 +6,7 @@
 }
 
 html {
-  background-color: #fff;
+  background-image: url(pizzapictures/cleantextured.png);
 }
 
 #grid-container {
@@ -140,6 +140,7 @@ html {
 }
 
 #grid-container #Customized-menu .menu-container {
+  background-color: #fff;
   display: -ms-grid;
   display: grid;
   width: 90%;
@@ -320,7 +321,7 @@ html {
 
 @media only screen and (min-width: 768px) {
   html {
-    background-color: #fff;
+    background-image: url(pizzapictures/cleantextured.png);
   }
   #grid-container {
     display: -ms-grid;
@@ -416,6 +417,7 @@ html {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     margin: 4% 0%;
+    padding: 2% 2%;
   }
   #grid-container #Customized-menu .menu-container #Select-crust-and-size #menu-button-sizeandprice #radio-grid {
     display: -ms-grid;
@@ -432,8 +434,8 @@ html {
   #grid-container #Customized-menu .menu-container #Select-crust-and-size #Select-Sauces-and-cheese {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   #grid-container #Customized-menu .menu-container #Select-crust-and-size .menu-grid {
     display: -ms-grid;

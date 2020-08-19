@@ -14,7 +14,6 @@ html {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  background-color: #fff;
 }
 
 #grid-container #desktop-header {
@@ -285,7 +284,7 @@ html {
 
 @media only screen and (min-width: 768px) {
   html {
-    background-color: #fff;
+    background-color: url(pizzapictures/cleantextured.png);
   }
   #grid-container {
     display: -ms-grid;
@@ -372,6 +371,9 @@ html {
         grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
+  }
+  #grid-container #meatza-menu .menu-container {
+    background-color: #fff;
   }
   #grid-container #footer {
     display: -ms-grid;
@@ -410,7 +412,7 @@ html {
 
 @media only screen and (min-width: 1020px) {
   html {
-    background-color: #fff;
+    background-color: url(pizzapictures/cleantextured.png);
   }
   #grid-container {
     display: -ms-grid;
@@ -497,6 +499,9 @@ html {
         grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
+  }
+  #grid-container #meatza-menu .menu-container {
+    background-color: #fff;
   }
   #grid-container #footer {
     display: -ms-grid;

@@ -14,7 +14,7 @@ html{
 #grid-container{
     display: grid;
     width: 100%;
-    background-color: #fff;
+ 
 
     #desktop-header{
         display: none;
@@ -127,6 +127,7 @@ html{
                     display: grid;
                     width: 100%;
                     
+                    
                     .menu-container{
                         display: grid;
                         width: 90%;
@@ -134,6 +135,7 @@ html{
                         justify-items: center;
                         align-items: center;
                         margin: 3% 5%;
+                    
                         img{
                             height:200px;
                             width: 100%;
@@ -245,7 +247,7 @@ html{
         @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
         
         html{
-            background-color: #fff;
+            background-color: url(pizzapictures/cleantextured.png);
         }
         
         #grid-container{
@@ -328,6 +330,9 @@ html{
               display:grid;
               grid-template-columns: repeat(3, 1fr);
               grid-template-rows: repeat(2, 1fr);
+                .menu-container{
+                    background-color: #fff;
+                }
           }
             
         
@@ -368,7 +373,7 @@ html{
         @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
         
         html{
-            background-color: #fff;
+            background-color:url(pizzapictures/cleantextured.png);
         }
         
         #grid-container{
@@ -451,6 +456,9 @@ html{
               display:grid;
               grid-template-columns: repeat(3, 1fr);
               grid-template-rows: repeat(2, 1fr);
+                .menu-container{
+                    background-color: #fff;
+                }
           }
             
         
